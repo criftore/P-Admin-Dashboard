@@ -4,6 +4,11 @@
   padding: 0;
   box-sizing: border-box;
 }
+.header,
+.sidebar,
+.main {
+  padding: 20px;
+}
 
 .container {
   display: grid;
@@ -12,6 +17,22 @@
 
 .header {
   background-color: white;
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  grid-template-rows: 1fr 1.5fr;
+}
+
+.search {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  align-items: center;
+}
+
+.input {
+  border-radius: 20px;
+  background-color: rgb(221, 221, 221);
+  border: none;
+  height: 30px;
 }
 
 .sidebar {
@@ -23,7 +44,6 @@
   color: white;
   font-weight: bolder;
   gap: 40px;
-  padding: 20px;
 }
 
 .dashboard,
@@ -60,7 +80,7 @@ li {
   margin-right: 20px;
 }
 
-.icon,
+li > .icon,
 .dash-icon {
   filter: brightness(0) invert(1);
 }
