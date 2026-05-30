@@ -46,6 +46,7 @@ li,
 .container {
   grid-template-columns: 1fr 5fr;
   grid-template-rows: 1fr 5fr;
+  height: 100%;
 }
 
 /* Sidebar Config */
@@ -159,6 +160,7 @@ button {
   grid-row: 1/3;
   grid-template-rows: max-content;
   padding: 10px;
+  height: 100%;
 }
 
 .card-container {
